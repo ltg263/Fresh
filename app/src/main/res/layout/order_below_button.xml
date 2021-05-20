@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_order_below"
+    android:layout_width="70dp"
+    android:layout_height="22dp"
+    android:layout_marginRight="14dp"
+    android:background="@drawable/order_list_status_type_button_selector"
+    android:stateListAnimator="@null"
+    android:button="@null"
+    android:text="立即评论"
+    android:textColor="#FF6C75"
+    android:textSize="@dimen/public_font_12sp" />

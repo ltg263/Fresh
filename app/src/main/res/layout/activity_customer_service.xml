@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicBgColor="@color/app_main_body"
+        app:publicShowLeft="true"
+        app:publicTextColor="@color/public_white"
+        app:publicTitle="@string/activity_customer_service_title" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/mRecyclerView"
+        android:layout_height="match_parent"/>
+</LinearLayout>

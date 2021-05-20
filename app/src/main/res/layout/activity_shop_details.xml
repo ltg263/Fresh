@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_title_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/public_title_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="14dp"
+                android:src="@mipmap/icon_public_arrow_back_white" />
+
+            <TextView
+                android:id="@+id/public_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@mipmap/arrow_right_circle"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="商铺详情"
+                android:textColor="@color/public_white"
+                android:textSize="@dimen/public_font_18sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/public_white"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="37dp"
+
+            android:layout_toLeftOf="@+id/iv_homepage_new_black"
+            android:layout_toRightOf="@+id/ll_location"
+            android:background="@drawable/shop_search_edittext_shape">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:src="@mipmap/home_icon_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingLeft="30dp"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:textColor="@color/public_color_333"
+                android:textColorHint="@color/public_search_color"
+                android:textSize="13dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+
+        android:id="@+id/iv_head"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/app_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category_parent"
+        android:background="@color/public_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:background="@color/public_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category_child"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:background="@color/public_color_F4F5F9" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_search"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:background="@color/public_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/rb_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/home_search_tagview_shape"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="综合"
+                    android:lines="1"
+                    android:textColor="@drawable/home_search_textview_selector"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/home_search_tagview_shape"
+                    android:button="@null"
+                    android:text="推荐"
+                    android:lines="1"
+                    android:textColor="@drawable/home_search_textview_selector"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/home_search_tagview_shape"
+                    android:button="@null"
+                    android:text="特价"
+                    android:lines="1"
+                    android:textColor="@drawable/home_search_textview_selector"
+                    android:textSize="12sp" />
+
+                <CheckBox
+                    android:id="@+id/rb_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:drawablePadding="3dp"
+                    android:background="@drawable/home_search_tagview_shape"
+                    android:button="@null"
+                    android:text="价格"
+                    android:lines="1"
+                    android:textColor="@drawable/home_search_textview_selector"
+                    android:textSize="12sp" />
+
+
+            </RadioGroup>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:background="@color/public_white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_shop"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/shopping_car"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共0件"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="，合计："
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_14sp"
+            />
+
+        <TextView
+           android:id="@+id/tv_total_price"
+            android:layout_marginRight="16dp"
+            android:textSize="@dimen/public_font_14sp"
+            android:text="￥0.00"
+            android:textColor="#FB0430"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_settlement"
+            android:text="提交订单"
+            android:textSize="@dimen/public_font_16sp"
+            android:textColor="@color/public_white"
+            android:background="@drawable/settlement_button_selector"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

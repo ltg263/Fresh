@@ -1,0 +1,12 @@
+<resources>
+
+
+
+    <style name="public_dialog_inout_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/public_dialog_enter</item>
+        //进入时的动画
+        <item name="android:windowExitAnimation">@anim/public_dialog_exit</item>
+        //退出时的动画
+    </style>
+
+</resources>

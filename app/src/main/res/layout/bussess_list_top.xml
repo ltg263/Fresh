@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/rg_search"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/public_white"
+        android:paddingTop="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_01"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/home_search_tagview_shape"
+            android:button="@null"
+            android:text="综合"
+            android:textColor="@drawable/home_search_textview_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/home_search_tagview_shape"
+            android:button="@null"
+            android:text="推荐"
+            android:textColor="@drawable/home_search_textview_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/home_search_tagview_shape"
+            android:button="@null"
+            android:text="评分"
+            android:textColor="@drawable/home_search_textview_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/home_search_tagview_shape"
+            android:button="@null"
+            android:text="距离"
+            android:textColor="@drawable/home_search_textview_selector" />
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

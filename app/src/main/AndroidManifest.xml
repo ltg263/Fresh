@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.power.fresh">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.power.common_opensurce.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_main_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:allowBackup">
+        <activity android:name=".ui.business.BusinessListActivity2"></activity>
+        <activity android:name=".ui.business.BusinessListActivity" />
+        <activity android:name=".ui.ApplyRefundActivity" />
+        <activity android:name=".ui.business.BusinessUserActivity" />
+        <activity android:name=".ui.marki.MarketOrderActivity" />
+        <activity android:name=".ui.marki.MarkiOrderActivity" />
+        <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".ui.MessageDetailsActivity" />
+        <activity android:name=".ui.my.enter.DeliveryManActivity" />
+        <activity android:name=".ui.PayStatusActivity" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.business.PendingActivity" />
+        <activity
+            android:name=".ui.business.SupplyListActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.business.CommonOrdersActivity" />
+        <activity android:name=".ui.business.WithDrawListActivity" />
+        <activity android:name=".ui.business.DeliveryBindActivity" />
+        <activity android:name=".ui.business.DeliveryManSearchActivity" />
+        <activity android:name=".ui.business.FundManagerActivity" />
+        <activity android:name=".ui.business.GoodsManagerActivity" />
+        <activity android:name=".ui.MessageActivity" />
+        <activity android:name=".ui.business.VIPActivity" />
+        <activity android:name=".ui.business.CommoditySoldOutActivity" />
+        <activity android:name=".ui.business.OrderManagerActivity" />
+        <activity android:name=".ui.business.CustomerOrderActivity" />
+        <activity android:name=".ui.business.SelectDistributorActivity" />
+        <activity android:name=".ui.business.DeliveryManManageActivity" />
+        <activity android:name=".ui.business.BankAddCardActivity" />
+        <activity android:name=".ui.business.BankCardWithDrawActivity" />
+        <activity android:name=".ui.business.BankCardListActivity" />
+        <activity android:name=".ui.AuditActivity" />
+        <activity android:name=".ui.aftersale.AfterSaleCcActivity" />
+        <activity android:name=".ui.order.OrderPayActivity" />
+        <activity android:name=".ui.my.FeedBackActivity" />
+        <activity android:name=".ui.my.enter.BusinessEnterActivity" />
+        <activity android:name=".ui.SettingActivity" />
+        <activity android:name=".ui.my.KeFuActivity" />
+        <activity android:name=".ui.my.TheInvitationActivity" />
+        <activity android:name=".ui.my.AfterSaleActivity" />
+        <activity android:name=".ui.my.DiscountActivity" />
+        <activity android:name=".ui.my.PersonalDataActivity" />
+        <activity android:name=".ui.my.ShippingListAddressActivity" />
+        <activity android:name=".ui.order.ConfirmOrderActivity" />
+        <activity android:name=".ui.ShopListActivity" />
+        <activity android:name=".ui.ShoppingCartActivity" />
+        <activity android:name=".ui.ShopQRCodeActivity" />
+        <activity android:name=".ui.ShopDetailsActivity" />
+        <activity android:name=".ui.ShopIntroducedActivity" />
+        <activity android:name=".ui.ATempActivity" />
+        <activity android:name=".ui.CommodityDetailsActivity" />
+        <activity android:name=".ui.SearchActivity" />
+        <activity android:name=".ui.order.MyOrderActivity" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="265d4b1c3a78394033ea868d38cc5ecf" />
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- 可配置android:process参数将Service放在其他进程中；android:enabled属性不能是false -->
+        <!-- 这个是自定义Service，要继承极光JCommonService，可以在更多手机平台上使得推送通道保持的更稳定 -->
+        <service
+            android:name=".push.JpushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service> <!-- Required since 3.0.7 -->
+        <!-- 新的 tag/alias 接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 3.3.0开始所有事件将通过该类回调 -->
+        <!-- 该广播需要继承 JPush 提供的 JPushMessageReceiver 类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name=".push.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+
+                <category android:name="com.power.fresh" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.LimitActivity"
+            android:label="@string/home_limit_title" />
+        <activity
+            android:name=".ui.SeckillActivity"
+            android:label="@string/home_limit_title" />
+        <activity android:name=".ui.AboutActivity" />
+        <activity android:name=".ui.ImgPreviewActivity" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.ForgetActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.aftersale.CustomerServiceActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.aftersale.details.CustomerServiceDetailsActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.aftersale.refund.CustomerServiceRefundActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.order.OrderDetailsActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.EvaluationActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".ui.my.AddAddressActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667" />
+    </application>
+
+</manifest>
+<!--
+1.首页 领取优惠券
+2.商家留言：后台问题
+3.无规格
+4.支付成功返回失败
+
+-->

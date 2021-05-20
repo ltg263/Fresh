@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_limit01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/home_limit_shape"
+    android:elevation="0.5dp"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_limit01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="92dp"
+        android:maxHeight="92dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_limit01_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="18dp"
+        android:text="- -"
+        android:textColor="#ff2b2b2a"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_limit01_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:text="- -"
+        android:textColor="#ff7d7d7d"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.7dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@color/home_limit_border" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_limit01_price_unit"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="¥- -(kg)"
+            android:textColor="#ff2b2b2a"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="8.5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/home_add" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

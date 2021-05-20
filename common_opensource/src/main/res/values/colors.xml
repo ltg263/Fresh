@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+
+    <color name="open_source_dialog_bg">#ffffff</color>
+    <color name="open_source_dialog_bg_press">#f0f0f0</color>
+
+
+    <color name="open_source_right_dialog_bg">#066839</color>
+    <color name="open_source_right_dialog_bg_press">#05512C</color>
+
+    <color name="open_source_dialog_confirm">#FFFFFF</color>
+    <color name="open_source_dialog_cancel">#4D4D4D</color>
+
+    <color name="open_source_dialog_line">#2c000000</color>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/public_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_orderStatus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="交易完成 -"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/public_color_F7F7F7"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_order_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/public_white"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_pinglun0"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="立即评论"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_cancel1"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="取消订单"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_pay2"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="立即支付"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+        <Button
+
+            android:id="@+id/btn_details3"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="查看详情"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_delete_order4"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="删除订单"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_cantact_order5"
+            android:stateListAnimator="@null"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/order_list_status_type_button_selector"
+            android:text="联系客服"
+            android:textColor="#FF6C75"
+            android:textSize="@dimen/public_font_12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

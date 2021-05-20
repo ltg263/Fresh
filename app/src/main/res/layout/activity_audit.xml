@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_white"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="审核结果" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@mipmap/shenhe_cg"/>
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜您审核通过"
+                android:textColor="#ff333333"
+                android:textSize="20sp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_desc_true"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请遵守《宁将生鲜服务协议》"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/ButtonStyle"
+                 android:background="#3A9CFF"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="41dp"
+                android:text="我知道了" />
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

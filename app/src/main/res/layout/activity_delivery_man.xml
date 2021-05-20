@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_white"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="配送员入驻" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="———————— 填写认证信息 ————————"
+                android:textColor="#ff0f0e0e"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="务必完善认证信息以便于提高审核通过率"
+                android:textColor="@color/public_gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请认真填写，确保信息真实完整"
+                android:textColor="@color/public_black60"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/public_color_F7F7F7"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="17dp"
+                android:paddingRight="16dp"
+                android:background="@color/public_white"
+                android:theme="@style/SettingsTheme">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/public_red"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="真实姓名"
+                        android:textColor="#ff202220"
+                        android:textSize="13sp" />
+
+
+                    <EditText
+                        android:id="@+id/et_real_name"
+                        android:textColor="@color/public_color_333"
+                        android:textColorHint="@color/public_search_color"
+                        android:textSize="13dp"
+                        android:hint="请输入真实姓名"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/public_red"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机号码"
+                        android:textColor="#ff202220"
+                        android:textSize="13sp" />
+
+
+                    <EditText
+                        android:id="@+id/et_phone_number"
+                        android:textColor="@color/public_color_333"
+                        android:textColorHint="@color/public_search_color"
+                        android:textSize="13dp"
+                        android:hint="请输入手机号码"
+                        android:background="@null"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/public_color_F7F7F7"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:text="请确保身份证边框完整、字体清晰、高度均匀"
+                    android:textColor="#c4c4c4"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="*"
+                    android:textColor="@color/public_red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="身份证照片"
+                    android:textColor="#ff202220"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+
+                <com.noober.background.view.BLImageView
+                    android:id="@+id/iv_id_card_positive"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:drawablePadding="3dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/add_icon"
+                    android:text="上传图片"
+                    android:textColor="#ff556a81"
+                    android:textSize="12sp"
+                    app:bl_solid_color="#F8F8F8"
+                    app:bl_stroke_color="#BCC2CA"
+                    app:bl_stroke_dashGap="2dp"
+                    app:bl_stroke_dashWidth="10dp"
+                    app:bl_stroke_width="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/public_color_F7F7F7"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:text="请确保身份证边框完整、字体清晰、高度均匀"
+                    android:textColor="#c4c4c4"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView44" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="*"
+                    android:textColor="@color/public_red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="身份证反面照片"
+                    android:textColor="#ff202220"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView33"
+                    app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+
+                <com.noober.background.view.BLImageView
+                    android:id="@+id/iv_id_card_negative"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    android:drawablePadding="3dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/add_icon"
+                    android:text="上传图片"
+                    android:textColor="#ff556a81"
+                    android:textSize="12sp"
+                    app:bl_solid_color="#F8F8F8"
+                    app:bl_stroke_color="#BCC2CA"
+                    app:bl_stroke_dashGap="2dp"
+                    app:bl_stroke_dashWidth="10dp"
+                    app:bl_stroke_width="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_marginTop="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/public_color_F7F7F7"
+                />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_commit"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="21dp"
+                android:text="提交" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

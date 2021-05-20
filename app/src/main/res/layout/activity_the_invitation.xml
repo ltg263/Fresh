@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3F8">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="新增收货地址" />
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_location"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:background="#FCFBF9"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位到当前位置"
+            android:textColor="#056839"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/icon_dingwei"
+            android:drawablePadding="5dp"
+           android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:background="#FCFBF9"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <com.power.fresh.widget.DeletableEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffaaaaaa"
+            android:textSize="14sp"
+            android:layout_marginLeft="112dp"
+            android:layout_centerVertical="true"
+            android:hint="请填写姓名"
+            android:background="@null"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#FCFBF9"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <com.power.fresh.widget.DeletableEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffaaaaaa"
+            android:textSize="14sp"
+            android:layout_marginLeft="112dp"
+            android:layout_centerVertical="true"
+            android:inputType="number"
+            android:maxLength="11"
+            android:hint="请填写联系电话"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_address"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#FCFBF9"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送地址"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_ssq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请选择省、市、区"
+            android:textColor="#ffaaaaaa"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/picture_icon_more"
+            android:drawablePadding="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eeeeee"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#FCFBF9"
+        >
+
+        <com.power.fresh.widget.DeletableEditText
+            android:id="@+id/et_adress_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffaaaaaa"
+            android:textSize="14sp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:hint="请填写详细地址(街道、楼牌号等)"
+            android:background="@null"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#FCFBF9"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设为默认地址"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/huadong_kaiguan_xuanze_selector"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <com.noober.background.view.BLButton
+        android:id="@+id/btn_login"
+        style="@style/ButtonStyle"
+        app:bl_corners_radius="0dp"
+        app:bl_solid_color="@color/app_main_body"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/text_save" />
+
+</LinearLayout>

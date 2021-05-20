@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/public_white"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="商品管理"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+
+        <com.noober.background.view.BLLinearLayout
+
+            android:id="@+id/ll_spsh"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+
+            app:bl_stroke_color="#8D8D8D"
+            app:bl_stroke_width="1dp"
+            app:bl_corners_radius="3dp"
+
+            app:bl_solid_color="@color/picture_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.noober.background.view.BLImageView
+                    android:scaleType="centerInside"
+                    app:bl_corners_radius="11dp"
+                    app:bl_solid_color="#FE626C"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/spsh_iv6"/>
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="18dp"
+                    android:drawableRight="@mipmap/home_more_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品审核"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="审核中"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_spsh_ing_value"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="审核失败"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_spsh_error_value"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </com.noober.background.view.BLLinearLayout>
+
+        <com.noober.background.view.BLLinearLayout
+            android:id="@+id/ll_spsxj"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+
+            app:bl_stroke_color="#8D8D8D"
+            app:bl_stroke_width="1dp"
+            app:bl_corners_radius="3dp"
+
+            app:bl_solid_color="@color/picture_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.noober.background.view.BLImageView
+                    android:layout_width="17dp"
+                    android:layout_height="19dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/spsh_spsxj_iv"
+                    app:bl_corners_radius="11dp"
+                    app:bl_solid_color="#38A8FF" />
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="18dp"
+                    android:drawableRight="@mipmap/home_more_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品上/下架"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品总数"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_spsj_num_value"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核中"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </com.noober.background.view.BLLinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        >
+
+        <com.noober.background.view.BLLinearLayout
+            android:id="@+id/ll_spk"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+
+            app:bl_stroke_color="#8D8D8D"
+            app:bl_stroke_width="1dp"
+            app:bl_corners_radius="3dp"
+
+            app:bl_solid_color="@color/picture_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.noober.background.view.BLImageView
+                    android:scaleType="centerInside"
+                    app:bl_corners_radius="11dp"
+                    app:bl_solid_color="#FFC44F"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/spsh_spk_iv"/>
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:paddingRight="18dp"
+                    android:drawableRight="@mipmap/home_more_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商品库"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="待入库"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_spk_drk_value"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="库存种类"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_kczl_value"
+                    android:layout_marginLeft="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </com.noober.background.view.BLLinearLayout>
+
+        <com.noober.background.view.BLLinearLayout
+            android:id="@+id/ll_busb"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:paddingTop="13dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+
+            app:bl_stroke_color="#8D8D8D"
+            app:bl_stroke_width="1dp"
+            app:bl_corners_radius="3dp"
+
+            app:bl_solid_color="@color/picture_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.noober.background.view.BLImageView
+                    android:scaleType="centerInside"
+                    app:bl_corners_radius="11dp"
+                    app:bl_solid_color="#64DCFD"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@mipmap/spsh_bjsp_iv"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawableRight="@mipmap/home_more_next"
+                    android:paddingRight="18dp"
+                    android:text="补给商品" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="补给订单"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_bjsp_value"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审核中"
+                    android:textColor="#ff434343"
+                    android:textSize="12sp"
+                    />
+
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8件"
+                    android:textColor="#fffe626c"
+                    android:textSize="13sp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </com.noober.background.view.BLLinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/public_color_F2F2F2"
+        />
+
+    <TextView
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待入库订单"
+        android:textColor="#ff000000"
+        android:textSize="15sp"
+        />
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/public_color_F2F2F2"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_busy_goods"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

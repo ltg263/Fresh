@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_chirld_name"
+    android:button="@null"
+    android:gravity="center"
+    android:padding="5dp"
+    android:text="根茎类"
+    android:textColor="#4d4d4d"
+    android:textSize="13sp" />
+
+

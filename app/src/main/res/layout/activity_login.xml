@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:background="@mipmap/bg_login" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginRight="31dp"
+
+        android:background="@drawable/bg_login_rounded"
+        android:elevation="3dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38.45dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_home_search_bar_transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/login_icon_phone" />
+
+            <com.power.fresh.widget.DeletableEditText
+                android:id="@+id/et_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableRight="@mipmap/input_clear"
+                android:hint="@string/please_input_your_phone"
+                android:inputType="phone"
+                android:maxLength="18"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:textColorHint="#ffb6c2ce"
+                android:textSize="13sp"
+
+                />
+
+            <com.power.fresh.widget.CountdownView
+                android:id="@+id/tv_send_code"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/login_selector_countdown"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="获取验证码"
+                android:textColor="#ffffffff"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_not_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:text="短信验证码收不到？"
+            android:textColor="#ff838383"
+            android:textSize="11sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38.45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_home_search_bar_transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@mipmap/login_icon_pwd" />
+
+            <com.power.fresh.widget.PasswordEditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/please_input_your_authCode"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#ffb6c2ce"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:paddingTop="5dp"
+            android:text="忘记密码？"
+            android:textColor="#ff838383"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/login_text" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_user_pwd"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="8dp"
+                android:text="密码登录"
+                android:textColor="#ff838383"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="14dp"
+                android:paddingBottom="8dp"
+                android:text="快速注册"
+                android:textColor="#ff838383"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="306dp"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已同意"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:textColor="#ff838383"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_ysxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策和用户协议》"
+            android:background="@drawable/text_underline"
+            android:textColor="#ff838383"
+            android:textSize="11sp" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

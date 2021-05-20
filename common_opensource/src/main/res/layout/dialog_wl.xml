@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="230dp"
+    android:layout_height="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <com.noober.background.view.BLLinearLayout
+        app:bl_corners_radius="8dp"
+        app:bl_solid_color="@color/picture_color_white"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/ll_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="填写物流信息"
+            />
+
+
+        <com.noober.background.view.BLEditText
+            android:id="@+id/et_wlgs"
+            android:layout_marginTop="15dp"
+            app:bl_stroke_color="#D2D2D2"
+            app:bl_corners_radius="3dp"
+            app:bl_stroke_width="1dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:background="@null"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:hint="请输入物流公司名称"
+
+            android:textColor="@color/public_color_333"
+            />
+
+
+
+        <com.noober.background.view.BLEditText
+            android:id="@+id/et_wldh"
+            android:layout_marginTop="15dp"
+            app:bl_stroke_color="#D2D2D2"
+            app:bl_corners_radius="3dp"
+            app:bl_stroke_width="1dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:lines="1"
+            android:imeOptions="actionDone"
+            android:background="@null"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="请输入物流单号"
+            android:padding="5dp"
+            android:textSize="14sp"
+            android:textColor="@color/public_color_333"
+            />
+
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp"
+            android:text="确认" />
+
+
+    </com.noober.background.view.BLLinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_dialog_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:src="@mipmap/home_dialog_fork" />
+
+</RelativeLayout>
+
+

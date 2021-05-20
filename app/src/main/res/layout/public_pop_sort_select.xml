@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.noober.background.view.BLRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/public_white"
+        app:bl_stroke_color="@color/public_line_color"
+        app:bl_stroke_width="1dp"
+
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rv_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="10dp"
+            android:text="选好了" />
+
+
+    </com.noober.background.view.BLRelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/image_view_bg_radius_selector"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_commodity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/iv_head"
+        android:text="蓝色妖姬"
+        android:textColor="@color/public_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/iv_fork"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/input_clear"
+   />
+
+
+</RelativeLayout>

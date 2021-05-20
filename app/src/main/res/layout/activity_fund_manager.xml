@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="资金管理" />
+
+
+    <com.noober.background.view.BLConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_margin="14dp"
+        app:bl_corners_radius="8dp"
+        app:bl_gradient_angle="0"
+        app:bl_gradient_endColor="#FF9806"
+        app:bl_gradient_startColor="#FFBE4C"
+
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/public_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_zjzc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9480.00"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/tv_zjsr" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计支出"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_zjzc"
+            app:layout_constraintStart_toStartOf="@+id/tv_zjzc"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zjzc" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="账户余额"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_yue_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6788.56"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingLeft="28dp"
+            android:paddingTop="3dp"
+            android:paddingRight="28dp"
+            android:paddingBottom="3dp"
+            android:text="提现"
+
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            app:bl_corners_radius="15dp"
+            app:bl_stroke_color="@color/public_white"
+            app:bl_stroke_width="1dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_chongzhi"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:bl_corners_radius="15dp"
+            app:bl_solid_color="@color/public_white"
+
+            android:layout_marginTop="5dp"
+            android:paddingLeft="28dp"
+            android:paddingTop="3dp"
+            android:paddingRight="28dp"
+            android:paddingBottom="3dp"
+
+
+            android:text="充值"
+
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+
+            app:layout_constraintEnd_toEndOf="@+id/tv_tixian"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_tixian"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tixian" />
+
+        <TextView
+            android:id="@+id/tv_zjsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="9480.00"
+            android:textColor="#ffffffff"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_yue_value" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计收入"
+            android:textColor="#ffffffff"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_zjsr"
+            app:layout_constraintStart_toStartOf="@+id/tv_zjsr"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zjsr" />
+
+    </com.noober.background.view.BLConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="13dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:background="@color/public_black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="资金明细"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp">
+
+
+        <RadioButton
+            android:id="@+id/rb_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/busy_zjbl_shape"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="收 入"
+
+            android:textColor="@drawable/home_search_textview_selector" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/busy_zjbl_shape"
+            android:button="@null"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="支 出"
+            android:textColor="@drawable/home_search_textview_selector" />
+
+
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_content"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

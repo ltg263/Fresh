@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_order_chird"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_fruit_name"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:text="黄金圣女果"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_12sp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_normsName"
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:text="20斤"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_totalPrice"
+        android:layout_weight="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:text="￥0.00"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_12sp" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:text="X1"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_12sp" />
+
+</LinearLayout>

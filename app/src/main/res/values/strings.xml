@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_main_name">宁将食库</string>
+    <string name="please_input_your_phone">请输入手机号</string>
+    <string name="please_input_your_accout">请输入账号</string>
+    <string name="please_input_your_authCode">请输入验证码</string>
+    <string name="please_input_your_pwd">请输入密码</string>
+    <string name="login_text">登录</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_save">保存</string>
+    <string name="text_register">注册</string>
+    <string name="home_nav_main">首页</string>
+    <string name="home_nav_sort">分类</string>
+    <string name="home_nav_shopping_car">购物车</string>
+    <string name="home_nav_orderform">订单</string>
+    <string name="home_nav_me">我的</string>
+    <string name="home_secktill_title">秒杀专区</string>
+    <string name="home_limit_title">限时热销</string>
+    <string name="shopping_fragment_title">购物车</string>
+    <string name="activity_customer_service_title">售后/退款</string>
+    <string name="activity_order_details_title">订单详情</string>
+    <string name="activity_evaluation_title">评价晒单</string>
+    <string name="seckill_start">立即开抢</string>
+    <string name="activity_customer_service_details_title">售后详情</string>
+    <string name="activity_customer_service_refund_title">申请退款</string>
+
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+    <string name="home_shops_salenum">销售量\t</string>
+    <string name="home_shops_km">km</string>
+    <string name="home_shops_distance">距离您\t\t</string>
+    <string name="home_shops_uptosend">起送¥</string>
+    <string name="home_shops_tonesend">\t\t配送¥</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="name_protocol"><h3>隐私协议</h3>
+<p>特别提示</p>
+<p>本隐私政策介绍本公司的隐私数据相关政策和惯例，这将涵盖我们如何收集、使用、处理、存储和/或披露那些通过本公司的移动App收集的关于您的个人信息。请你仔细阅读我们的隐私政策。</p>\n
+<p><strong>一、本公司如何收集您的个人信息</strong></p>\n
+<p>个人信息是可用于唯一地识别或联系某人的数据。</p>\n
+<p>当您使用本公司的移动App，注册用户过程中我们将会收集您的个人信息，如：电子邮件地址、电话号码。为了保护个人隐私，您不应提供除本公司特别要求之外的任何其它信息。</p>
+<p><strong>二、本公司如何使用您的个人信息</strong></p>
+<p>1、通过您的个人信息，向您发送本公司移动App的服务信息。</p>
+<p>2、通过您的个人信息实现密码找回功能。</p>
+<p>3、除本公司发生重组、合并或出售，可将我们收集的一切个人信息转让给相关第三方外，本公司不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本公司单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些信息。</p>
+<p><strong>三、个人信息安全</strong></p>
+<p>保证您的个人数据的安全对我们来说至关重要。当您在本公司的移动App中注册输入个人数据时，我们会利用安全套接字层技术 (SSL) 对这些信息进行加密。</p>
+<p>在数据传输和数据保管两个阶段里，我们会通过广为接受的行业标准（如防火墙、加密和数据隐私法律要求）来保护您向我们提交的信息。</p>
+<p>然而，没有任何一种互联网传输或电子存储方法是100%安全的。因此，尽管我们通过商业上可接受的方式来保护您的个人信息，但仍无法保证信息的绝对安全。</p>
+<p><strong>四、本公司会将个人信息保存多久</strong></p>
+<p>一般来说，本公司仅保留您的个人信息至履行收集目的所需的期限，同时将遵守适用法律规定的数据保留期限。</p>
+<p><strong>五、法律免责声明</strong></p>
+<p>在法律要求的情况下，以及本公司认为必须披露与您有关的信息来保护本公司的法定权益和/或遵守司法程序、法院指令或适用于本公司的移动App的法律程序时，我们有权透露您的个人信息。
+如果本公司确定为了执行本公司的条款和条件或保护我们的经营，披露是合理必须的，则我们可披露与您有关的信息。</p>
+<p><strong>六、本隐私政策的更改</strong></p>
+<p>如果决定更改隐私政策，我们会在本政策中、本公司网站中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。
+本公司保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，本公司会通过网站通知的形式告知。</p>
+<p><strong>七、隐私问题</strong></p>
+<p>如果你对本公司的隐私政策或数据处理有任何问题或顾虑，请通过邮箱
+<a class='url' href='mailto:ningbojianxuan@163.com' target='_blank'>ningbojianxuan@163.com</a>与本公司联系。</p>
+
+</string>
+    <string name="gys_string">A端厂商/经销商入驻</string>
+    <string name="sjrz_string">B端商家入驻</string>
+</resources>

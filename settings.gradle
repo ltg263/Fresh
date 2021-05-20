@@ -1,0 +1,4 @@
+include ':JavaTestlib'
+rootProject.name='Fresh'
+include ':app', ':http', ':common_base'
+include ':common_opensource'

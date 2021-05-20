@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/public_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_orderStatus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:text="交易完成"
+        android:textColor="@color/public_black"
+        android:textSize="@dimen/public_font_14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/public_color_F7F7F7"/>
+
+
+    <TextView
+        android:id="@+id/tv_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:paddingRight="13dp"
+        android:text="配送地址：湖北省武汉市江夏区华师园北路靠近光谷科技港"
+        android:textColor="@color/public_color_959292"
+        android:textSize="@dimen/public_font_14sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/public_color_F7F7F7"/>
+
+
+
+  <LinearLayout
+      android:id="@+id/ll_shangpin_content"
+      android:paddingLeft="13dp"
+      android:paddingRight="13dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/public_color_F7F7F7"/>
+
+
+
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/public_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/tv_type_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/public_white"
+            android:gravity="center_vertical"
+            android:text="共1种"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_zongji_title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/public_white"
+            android:gravity="center_vertical"
+            android:text="总计："
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_12sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_zongji_value"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/public_white"
+            android:gravity="center_vertical"
+            android:text="￥799.00"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_12sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            >
+
+            <Button
+                android:id="@+id/btn_daohang"
+                android:visibility="gone"
+                android:stateListAnimator="@null"
+                android:layout_width="70dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/order_list_status_type_button_selector"
+                android:text="导航"
+                android:textColor="#FF6C75"
+                android:textSize="@dimen/public_font_12sp" />
+
+
+            <Button
+                android:id="@+id/btn_lxkh"
+                android:stateListAnimator="@null"
+                android:layout_width="70dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/order_list_status_type_button_selector"
+                android:text="查看详情"
+                android:textColor="#FF6C75"
+                android:textSize="@dimen/public_font_12sp" />
+
+
+            <Button
+                android:id="@+id/btn_songda"
+                android:stateListAnimator="@null"
+                android:layout_width="70dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/order_list_status_type_button_selector"
+                android:text="确认送达"
+                android:textColor="#FF6C75"
+                android:textSize="@dimen/public_font_12sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

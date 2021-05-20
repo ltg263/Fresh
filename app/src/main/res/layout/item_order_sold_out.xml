@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/public_white"
+    android:paddingTop="10dp"
+    android:paddingBottom="12dp">
+
+    <ImageView
+        android:id="@+id/iv_url"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/image_view_bg_radius_selector"
+        android:src="@mipmap/bg_login" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玉米清脆香甜"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_14sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="销量：0"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/public_font_13sp" />
+
+            <TextView
+                android:id="@+id/tv_total_stock"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="库存：150000"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/public_font_13sp" />
+        </LinearLayout>
+
+
+        <TextView
+           android:id="@+id/tv_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新时间："
+            android:lines="1"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/public_font_13sp" />
+
+        <TextView
+            android:id="@+id/tv_sale_price"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥30.00："
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/public_font_13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:gravity="bottom|right"
+        android:orientation="vertical">
+
+
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_price"
+            app:bl_stroke_width="1dp"
+            app:bl_stroke_color="@color/public_color_FF5661"
+            app:bl_corners_radius="4dp"
+            android:drawablePadding="3dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="上架"
+            android:textColor="@color/public_color_FF5661"
+            android:textSize="@dimen/public_font_12sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+

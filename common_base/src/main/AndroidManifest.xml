@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hjq.common">
+
+    <application>
+        <activity android:name="com.powerrich.common.base.BaseTablayoutActivity"></activity>
+        <activity android:name="com.powerrich.common.base.BaseListActivity" />
+    </application>
+
+</manifest>

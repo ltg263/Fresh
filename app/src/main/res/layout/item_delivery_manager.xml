@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.noober.background.view.BLLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+
+    app:bl_solid_color="@color/public_white"
+    app:bl_corners_radius="3dp"
+
+   >
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:background="@color/public_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玉米清脆香甜"
+            android:textColor="@color/public_black"
+            android:textSize="@dimen/public_font_14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_specification"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系电话：1231231"
+            android:textColor="#626061"
+            android:textSize="@dimen/public_font_14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <com.noober.background.view.BLTextView
+            android:id="@+id/tv_bind"
+            app:bl_stroke_width="1dp"
+            app:bl_stroke_color="@color/public_color_FF5661"
+            app:bl_corners_radius="4dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="绑定"
+            android:textColor="@color/public_color_FF5661"
+            android:textSize="@dimen/public_font_12sp" />
+
+    </LinearLayout>
+
+
+
+
+
+</com.noober.background.view.BLLinearLayout>
+
+
+
+
+
+

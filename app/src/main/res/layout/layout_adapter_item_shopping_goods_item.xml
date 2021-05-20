@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/all_check_box_selector"
+
+            android:text=""
+            android:textColor="@color/public_color_FF808080"
+            android:textSize="@dimen/public_font_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_goods_icon"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/image_view_bg_radius_selector"
+            android:scaleType="fitXY"
+            android:src="@mipmap/bg_login" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玉米清脆香甜"
+                android:textColor="@color/public_black"
+                android:textSize="@dimen/public_font_16sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新鲜健康  自然美味"
+                android:textColor="@color/public_color_999999"
+                android:textSize="@dimen/public_font_14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="规格:"
+                    android:textColor="#626061"
+                    android:textSize="@dimen/public_font_14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="¥12.90/袋"
+                    android:textColor="@color/public_red" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="11"
+            android:visibility="gone" />
+
+        <com.power.fresh.widget.ShopAddand
+            android:id="@+id/view_shopadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="15dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

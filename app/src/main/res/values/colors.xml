@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#066839</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="base_bg">#FFF7F7F7</color>
+    <color name="home_limit_border">#E9E8E8</color>
+    <color name="color_106AEF">#106AEF</color>
+
+    <color name="app_main_body">#066839</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_399BFF">#399BFF</color>
+    <color name="color_FF5A3A">#FF5A3A</color>
+    <color name="color_FFA43A">#FFA43A</color>
+    <color name="app_main_body_pressed">#05542E</color>
+    <color name="public_color_FF808080">#ff808080</color>
+    <color name="public_color_999999">#999999</color>
+    <color name="public_color_4D4D4D">#4D4D4D</color>
+
+    <!-- 按钮禁用时的颜色 -->
+    <color name="colorButtonDisable">#FFE6E6E6</color>
+    <!-- 按钮按压时的颜色 -->
+    <color name="colorButtonPressed">#1976D2</color>
+
+
+
+    <color name="public_color_FAFAFA">#FAFAFA</color>
+    <color name="public_color_FF5661">#FF5661</color>
+    <color name="public_color_F8F8F8">#F8F8F8</color>
+    <color name="public_color_FB0430">#FB0430</color>
+
+
+
+</resources>

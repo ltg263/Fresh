@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicBgColor="@color/app_main_body"
+        app:publicShowLeft="false"
+        app:publicTextColor="@color/public_white"
+        app:publicTitle="@string/home_nav_orderform" />
+
+    <com.power.fresh.indicator.CommonIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F0F0F0" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpOrderType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.power.common_opensurce.widget.layout.RadiusShadowLinearLayout
+        android:id="@+id/ll_test"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:background="@color/public_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:qmui_borderColor="#40FFFFFF"
+        app:qmui_outerNormalColor="#40FFFFFF"
+        app:qmui_radius="4dp"
+        app:qmui_shadowElevation="4dp"
+        app:qmui_showBorderOnlyBeforeL="true">
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_delete_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_evaluation_select_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="照片视频"
+            android:textColor="@color/public_color_999999"
+            android:textSize="@dimen/public_font_9sp" />
+    </com.power.common_opensurce.widget.layout.RadiusShadowLinearLayout>
+
+
+</LinearLayout>

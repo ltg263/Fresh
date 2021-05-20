@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingTop="5dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/tv_changyong"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="3dp"
+        android:text="常用订单"
+        app:bl_corners_radius="4dp"
+        app:bl_stroke_color="@color/public_color_FF5661"
+        app:bl_stroke_width="1dp"
+
+
+        />
+
+    <com.noober.background.view.BLTextView
+        android:id="@+id/tv_xuangou"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="3dp"
+        android:text="选购商品"
+        android:textColor="@color/public_white"
+        app:bl_corners_radius="4dp"
+        app:bl_solid_color="@color/app_main_body"
+        app:bl_stroke_width="1dp"
+
+        />
+</LinearLayout>
+
+
+
+
+
+

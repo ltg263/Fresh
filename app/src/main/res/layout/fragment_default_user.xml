@@ -1,0 +1,220 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.power.fresh.fragment.MeFragment"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/me_head_bg">
+
+            <com.power.fresh.widget.CircleImageView
+                android:id="@+id/tv_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="63dp"
+                android:gravity="center"
+              />
+
+
+            <TextView
+                android:id="@+id/tv_me_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_head"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/tv_head"
+                android:text="鲜到鲜得"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_qr"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/tv_me_nickname"
+                android:layout_alignTop="@+id/tv_me_nickname"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:src="@mipmap/qr_icon" />
+
+
+
+            <TextView
+                android:id="@+id/tv_user_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_me_nickname"
+                android:layout_alignLeft="@+id/tv_me_nickname"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="普通会员"
+                android:textColor="#056839"
+                android:textSize="10sp"
+                app:bl_corners_radius="13dp"
+                app:bl_solid_color="#ececec" />
+
+
+            <ImageView
+                android:id="@+id/iv_homepage_new_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="21dp"
+                android:src="@mipmap/icon_me_tools_message" />
+
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/iv_homepage_new_black"
+                android:src="@mipmap/icon_me_tools_settings" />
+
+
+            <com.noober.background.view.BLTextView
+                android:id="@+id/text_juese"
+                app:bl_stroke_width="1dp"
+                app:bl_stroke_color="@color/public_white"
+                app:bl_corners_radius="10dp"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="83dp"
+                android:layout_marginRight="21dp"
+                android:text="经销商"
+                android:textColor="@color/public_white" />
+
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_me_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="13dp"
+            android:text="我的订单"
+            android:textColor="#ff202220"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_me_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingTop="8dp"
+            android:paddingBottom="13dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/public_color_F7F7F7" />
+
+
+        <TextView
+            android:id="@+id/tv_me_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="13dp"
+            android:text="常用功能"
+            android:textColor="#ff202220"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="13dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/public_color_F7F7F7" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingRight="16dp"
+            android:theme="@style/SettingsTheme">
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/home_more_next"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:text="意见反馈"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_shangjia_ruzhu01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/home_more_next"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:text="@string/sjrz_string"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_gongyingshang_ruzhu02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/home_more_next"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:text="@string/gys_string"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_peisongyuan_ruzhu03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/home_more_next"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:text="配送员入驻"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

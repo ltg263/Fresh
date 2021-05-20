@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tv_time_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2020-08-06"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name01"
+        app:layout_constraintStart_toStartOf="@+id/tv_name01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name01" />
+
+    <TextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tv_time_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2020-08-06"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name02"
+        app:layout_constraintStart_toStartOf="@+id/tv_name02"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name02" />
+
+    <TextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tv_time_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="2020-08-06"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressview_progress"
+        app:layout_constraintStart_toStartOf="@+id/view03"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_03" />
+
+    <com.power.common_opensurce.widget.ProgressView
+        android:id="@+id/progressview_progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:background="#CCCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/home_banner_unselect"
+        app:layout_constraintEnd_toEndOf="@+id/progressview_progress"
+        app:layout_constraintStart_toStartOf="@+id/progressview_progress"
+        app:layout_constraintTop_toTopOf="@+id/view01" />
+
+
+    <View
+        android:id="@+id/view01"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="38dp"
+        android:background="@drawable/home_banner_unselect"
+        app:layout_constraintBottom_toBottomOf="@+id/progressview_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view03"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/home_banner_unselect"
+        android:layout_marginRight="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view01" />
+
+    <TextView
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/tv_name01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="已申请"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/view01"
+        app:layout_constraintStart_toStartOf="@+id/progressview_progress"
+        app:layout_constraintTop_toBottomOf="@+id/view01" />
+
+    <TextView
+        android:id="@+id/tv_name02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="审核中"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_name_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="审核结果"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressview_progress"
+        app:layout_constraintStart_toStartOf="@+id/view03"
+        app:layout_constraintTop_toBottomOf="@+id/view03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

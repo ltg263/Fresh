@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 正则表达式编辑框 -->
+    <declare-styleable name="RegexEditText">
+        <!-- 正则输入限制 -->
+        <attr name="inputRegex" format="string" />
+        <!-- 常用正则类型 -->
+        <attr name="regexType">
+            <!-- 手机号（只能以 1 开头） -->
+            <enum name="mobile" value="0x01" />
+            <!-- 中文（普通的中文字符） -->
+            <enum name="chinese" value="0x02" />
+            <!-- 英文（大写和小写的英文） -->
+            <enum name="english" value="0x03" />
+            <!-- 整数（非 0 开头的数字） -->
+            <enum name="count" value="0x04" />
+            <!-- 用户名（中文、英文、数字） -->
+            <enum name="name" value="0x05" />
+            <!-- 非空格字符 -->
+            <enum name="nonnull" value="0x06" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RadiusLinearLayout">
+        <attr name="public_backgroundColor" format="reference" />
+        <attr name="public_borderColor" format="reference" />
+        <attr name="public_borderWidth" format="dimension" />
+        <attr name="public_isRadiusAdjustBounds" format="boolean" />
+        <attr name="public_radius" format="dimension"/>
+        <attr name="public_radiusTopLeft" format="dimension"/>
+        <attr name="public_radiusTopRight" format="dimension" />
+        <attr name="public_radiusBottomLeft" format="dimension" />
+        <attr name="public_radiusBottomRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

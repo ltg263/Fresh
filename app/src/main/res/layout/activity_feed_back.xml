@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:background="@color/public_white"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="意见反馈"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@mipmap/kefu"
+         android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="遇到问题了？点击 在线客服 包包立刻解答您的
+问题。"
+        android:textColor="#ff949494"
+        android:textSize="14sp"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F0F0F0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="您的问题或建议："
+        android:textColor="#333333"
+        android:textSize="15sp"
+        />
+
+
+        <com.noober.background.view.BLEditText
+           android:id="@+id/et_content"
+            app:bl_stroke_color="#D2D2D2"
+            app:bl_corners_radius="3dp"
+            app:bl_stroke_width="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="130dp"
+            android:textColor="@color/public_color_333"
+            android:textColorHint="@color/public_search_color"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:gravity="left|top"
+            android:hint="请简要描述你在使用产品过程中的问题和意见"
+            android:background="@null"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F0F0F0"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="您的联系方式"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            />
+
+        <com.noober.background.view.BLEditText
+           android:id="@+id/et_mobile"
+            app:bl_stroke_color="#D2D2D2"
+            app:bl_corners_radius="3dp"
+            app:bl_stroke_width="1dp"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:textColor="@color/public_color_333"
+            android:textColorHint="@color/public_search_color"
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:gravity="left|center_vertical"
+            android:hint="请输入您的联系方式"
+            android:background="@null"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请留下您的联系方式，以便我们能够方便了解问题以及
+您反馈问题结果。紧急问题可拨打123-456-789，获得
+及时帮助"
+            android:textColor="#ffd5d5d5"
+            android:textSize="14sp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:text="提交" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

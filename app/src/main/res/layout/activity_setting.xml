@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SeckillActivity">
+
+    <com.powerrich.common.widget.TitleBar
+        android:id="@+id/mTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        app:publicTitle="系统设置" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="16dp"
+        android:theme="@style/SettingsTheme">
+
+        <TextView
+            android:id="@+id/tv_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/home_more_next"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="修改密码"
+            android:textColor="#ff202220"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_protocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/home_more_next"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="隐私协议"
+            android:textColor="#ff202220"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清理缓存"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_clear_value"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 M"
+                android:textColor="#ff202220"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/home_more_next"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp"
+            android:text="关于我们"
+            android:textColor="#ff202220"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="21dp"
+        android:text="退出登录" />
+
+
+
+
+</LinearLayout>

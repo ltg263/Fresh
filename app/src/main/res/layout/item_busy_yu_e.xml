@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="59dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+
+>
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玉米1260g"
+            android:textColor="#ff4c4c4c"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-6-18"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff64f4f"
+        android:textSize="16sp"
+        />
+
+
+
+</LinearLayout>
